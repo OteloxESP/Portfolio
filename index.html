@@ -5,20 +5,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jose Antonio Orellana Gómez | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-900 text-gray-100 min-h-screen">
-  <div class="max-w-3xl mx-auto p-6">
+<body class="text-gray-100 min-h-screen">
+  <div class="max-w-3xl mx-auto p-6 rounded-xl gradient-border glass-card my-8">
     <header class="mb-10 text-center">
       <h1 id="name" class="text-4xl font-bold mb-3 text-white">Cargando...</h1>
       <p id="bio" class="text-gray-400"></p>
     </header>
 
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4 text-white">Sobre mí</h2>
-      <p class="text-gray-300">
-        Soy un desarrollador con experiencia en aplicaciones web modernas.
-        Me apasiona crear soluciones limpias, rápidas y bien estructuradas.
-      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Lenguajes de Programación -->
+        <div class="glass-card p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-4 text-indigo-400">Lenguajes de Programación</h3>
+          <div class="grid grid-cols-2 gap-6">
+            <!-- Backend -->
+            <div>
+              <h4 class="text-sm font-semibold mb-2 text-green-400">Backend</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-center space-x-2">
+                  <span class="text-yellow-400">▹</span>
+                  <span>PHP</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <span class="text-yellow-400">▹</span>
+                  <span>Python</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <span class="text-yellow-400">▹</span>
+                  <span>Java</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Frontend -->
+            <div>
+              <h4 class="text-sm font-semibold mb-2 text-blue-400">Frontend</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-center space-x-2">
+                  <span class="text-yellow-400">▹</span>
+                  <span>HTML</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <span class="text-yellow-400">▹</span>
+                  <span>CSS</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <span class="text-yellow-400">▹</span>
+                  <span>JavaScript</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <span class="text-yellow-400">▹</span>
+                  <span>TypeScript</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks y Herramientas -->
+        <div class="glass-card p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-4 text-purple-400">Frameworks y Herramientas</h3>
+          <div class="grid grid-cols-2 gap-6">
+            <!-- Frameworks -->
+            <div>
+              <h4 class="text-sm font-semibold mb-2 text-green-400">Backend</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-center space-x-2">
+                  <span class="text-yellow-400">▹</span>
+                  <span>Laravel</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <span class="text-yellow-400">▹</span>
+                  <span>FastAPI</span>
+                </li>
+              </ul>
+              <h4 class="text-sm font-semibold mb-2 mt-4 text-blue-400">Frontend</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-center space-x-2">
+                  <span class="text-yellow-400">▹</span>
+                  <span>Next.js</span>
+                </li>
+              </ul>
+            </div>
+            <!-- DevOps -->
+            <div>
+              <h4 class="text-sm font-semibold mb-2 text-orange-400">DevOps</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-center space-x-2">
+                  <span class="text-yellow-400">▹</span>
+                  <span>Git</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <span class="text-yellow-400">▹</span>
+                  <span>Docker</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <span class="text-yellow-400">▹</span>
+                  <span>AWS</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
   <section>
