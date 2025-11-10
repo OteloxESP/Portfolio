@@ -15,10 +15,15 @@ async function init() {
   try {
     const res = await fetch(`https://api.github.com/users/${config.github}/repos`);
     const repos = await res.json();
+    
+    const filteredRepos = repos.filter(repo => 
+      repo.name !== config.github && 
+      repo.name.toLowerCase() !== 'portfolio'
+    );
 
     repoList.innerHTML = "";
 
-    repos.forEach(repo => {
+    filteredRepos.forEach(repo => {
       const card = document.createElement("div");
       card.className = "bg-gray-800 p-5 rounded-lg border border-gray-700 hover:border-gray-600 transition-all duration-200";
       card.innerHTML = `
